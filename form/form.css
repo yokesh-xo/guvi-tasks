@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.home-page {
+    background-color: rgb(211, 211, 211);
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+    padding: 25px;
+}
+
+.card-container {
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px darkgray;
+}
+
+@media screen and (min-width: 1250px) {
+    .card-container {
+        width: 40%;
+    }
+}
+
+label, p {
+    font-family: "Poppins", serif;
+}
+
+input:focus {
+    outline: none;
+}
+
+p {
+    text-align: center;
+}
+
+.heading {
+    font-size: 32;
+    margin: auto;
+}
+
+.sub-heading {
+    color: grey;
+    margin: auto;
+    font-size: 16;
+}
+
+.title-container {
+    margin: 50px auto;
+}
+
+.user-input div{
+    padding: 10px;
+    margin: 15px 30px 15px 30px;
+}
+
+input[type='text'], input[type='date'], textarea {
+    all: unset;
+    font-family: "Poppins", serif;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+input[type='number'] {
+    all: unset;
+    font-family: "Poppins", serif;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-left: 5px;
+    width: auto;
+}
+
+input[type='radio'] {
+    accent-color: black;
+}
+
+.card-container button {
+    font-family: "Poppins", serif;
+    font-size: 16;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 2px;
+    height: 50px;
+    width: 200px;
+    margin: 30px 33%;
+}
+
+.card-container button:hover {
+    font-family: "Poppins", serif;
+    font-size: 16;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 2px;
+    height: 50px;
+    width: 200px;
+    margin: 30px 33%;
+}
