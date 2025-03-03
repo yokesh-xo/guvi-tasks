@@ -1,0 +1,567 @@
+body {
+    margin: 0;
+    font-family: "Poppins", serif;
+}
+
+
+.primary-text {
+    font-family: 'Volkhov', serif;
+    font-weight: bold;
+}
+.primary-text span {
+    color: #FA7436;
+}
+
+.secondary-text {
+    font-size: 20px;
+    line-height: 35px;
+    color: #666666;
+}
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 50px 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.slider a {
+    margin: 0 15px;
+    display: inline-flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 25px;
+    width: 25px;
+    color: #888888;
+    text-decoration: none;
+    border: 1px solid #888888;
+    border-radius: 100px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.slider a:hover {
+    color: white;
+    background-color: #FA7436;
+    border: 1px solid #FA7436;
+}
+
+
+/* header stylings */
+header {
+    background-color: white;
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+nav .btn,
+.btn-primary {
+    font-size: medium;
+    font-weight: 600;
+    padding: 12px 35px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Poppins", serif;
+}
+
+nav .btn {
+    color: #FA7436;
+}
+
+nav .btn:hover, .btn-primary:hover {
+    outline: 1px solid #FA7436;
+    box-shadow: 0px 5px 10px 0px #FFA07A;
+}
+
+.btn-primary {
+    height: 50px;
+    width: 170px;
+    background-color: #FA7436;
+    border: none;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.nav-links {
+    margin: 0 0 0 50px;
+    width: 60%;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* landing component */
+.landing {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.landing-text {
+    width: 45%;
+    padding: 200px 0 25px;
+}
+
+.landing-text .primary-text {
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.landing-text .secondary-text {
+    margin: 25px 0;
+    width: 90%;
+}
+
+.landing-text a {
+    margin: 20px 0;
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid #FA7436;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: 500;
+    color: #FA7436;
+}
+
+.landing-text a:hover {
+    background-color: #FA7436;
+    color: white;
+}
+
+.landing-img {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.landing-img .image1 {
+    margin-top: 110px;
+}
+
+.landing-img .landing-card {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    z-index: 1;
+    padding: 80px 0;
+}
+
+.landing-img .card-1, .landing-img .card-2, .landing-img .card-3 {
+    width: 30%;
+    display: flex;
+    gap: 15px;
+    margin: 60px auto;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+}
+
+.landing-img .card-1 {
+    margin-left: 30px;
+}
+
+.landing-img .card-2 {
+    margin-left: 450px;
+}
+
+.landing-img .card-3 {
+    margin-left: 100px;
+}
+
+.landing-card span {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    display: block;
+    color: #666666;
+}
+
+.landing-card .card-icon {
+    padding: 5px 0;
+}
+
+/* Explore form */
+.explore-form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    width: 70%;
+    margin: 25px auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.1);
+}
+
+.explore-form div {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.explore-form label {
+    font-weight: 500;
+}
+
+.explore-form select {
+    font-size: 13px;
+    height: 40px;
+    border: none;
+    color: #666666;
+}
+
+/* Tour component */
+.tour {
+    width: 100%;
+    margin: 50px auto;
+    background-color: #F7F8FC;
+}
+
+.tour-text, .discount-text, .plans-text {
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px 50px 10px;
+}
+
+.tour-text .primary-text, .discount-text .primary-text, .plans-text .primary-text, .blog-text .primary-text{
+    font-size: 35px;
+    text-align: center;
+}
+
+.tour-text .secondary-text, .discount-text .secondary-text, .plans-text .secondary-text {
+    text-align: center;
+    padding: 20px;
+}
+
+.tour-card {
+    width: 280px;
+    margin: 0 30px;
+    padding: 30px 40px;
+}
+
+.tour-card .card-icon {
+    height: 35%;
+}
+
+.tour-card p {
+    margin-top: 20px;
+    color: #222222;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.tour-card p span {
+    color: #666666;
+    font-size: 15px;
+    font-weight: 350;
+}
+
+/* Discount Component */
+.discount .card-section, .plans .card-section, .blog .card-section {
+    flex-wrap: nowrap;
+}
+
+.discount-card {
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.discount .discount-card:hover {
+    box-shadow: 0px 0px 50px 5px rgba(250, 116, 54, 0.2);
+}
+
+.discount-card .card-info {
+    align-items: center;
+    padding: 10px 15px;
+    font-family: "Poppins", serif;
+    color: #666666;
+    font-weight: 350;
+    font-size: 15px;
+}
+
+.discount-card .card-info div {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount-card .card-info img{
+    width: auto;
+    height: 15px;
+    margin: 0 5px;
+}
+
+.discount-card .card-info .place {
+    font-family: "Poppins", serif;
+    font-weight: 450;
+    color: #222222;
+    font-size: 25px;
+}
+
+.discount-card .card-info .price {
+    text-decoration: line-through;
+}
+
+.discount-card .card-info .price span {
+    text-decoration: none; 
+    background-color: #FFE7DB;
+    border-radius: 5px;
+    margin-left: 5px;
+    color: #FA7436;
+    font-weight: 400;
+    padding: 2px;
+    display: inline-block;
+}
+
+/* Plans Component */
+.plans, .blog {
+    margin: 100px 0;
+}
+
+.plans .slider {
+    margin: 0;
+    text-align: end;
+    position: relative;
+    right: -200px;
+}
+
+/* Blog Component */
+.blog .card {
+    border: none;
+    width: 270px;
+}
+
+.blog .card .place {
+    font-size: 20px;
+}
+
+.blog .primary-text {
+    font-size: 55px;
+    padding: 25px;
+}
+
+.blog-card .card-info {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Review Components */
+.review {
+    display: flex;
+    flex-direction: row;
+    background-color: #F7F8FC;
+    padding: 100px 100px;
+    height: 300px;
+}
+
+.review-text {
+    margin-top: 0 25px;
+    width: 50%;
+    padding: 0px 50px;
+}
+
+.review-text .primary-text {
+    font-size: 50px;
+}
+
+.review-text .slider {
+    margin: 40px 0;
+    float: left;
+}
+
+.review-cards {
+    margin: 0 50px;
+    width: 50%;
+    position: relative;
+}
+
+.review-card {
+    background-color: white;
+    padding: 25px;
+    width: 80%;
+    border: none;
+}
+
+.review-card .review{
+    background-color: white;
+    padding: 25px;
+}
+
+.review-card .card-info {
+    color: #444444;
+}
+
+.review-card .avatar {
+    position: absolute;
+    top: -35px;
+    left: -35px;
+    z-index: 15;
+}
+
+.review-card .place {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.review-cards .card-1{
+    position: absolute;
+    z-index: 10;
+    box-shadow: 45px 50px 50px 25px rgba(0, 0, 0, 0.1);
+}
+
+.review-cards .card-2{
+    position: absolute;
+    top: 80px;
+    left: 65px;
+}
+
+/* Footer Component */
+footer {
+    height: auto;
+    padding: 60px;
+    position: relative;
+    background-color: #F7F8FC;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text .logo {
+    justify-content: flex-start;
+    margin: 0px;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.footer-text .secondary-text {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.footer-text .slider {
+    display: flex;
+    float: left;
+    margin: 0;
+}
+
+footer .subscribe {
+    margin: 0 auto;
+    width: 60%;
+    padding: 90px;
+    background-color: #FA7436;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 1;
+    top: -100px;
+}
+
+footer .subscribe h1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 0 120px;
+    color: white;
+    font-family: "Volkhov", serif;
+}
+footer form {
+    background-color: white;
+    border-radius: 10px;
+}
+
+footer input[type = "email"] {
+    all: unset;
+    display: inline-block;
+    width: 60%;
+    height: 20px;
+    padding: 20px 0;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-section .footer-text {
+    width: 55%;
+    padding: 50px;
+}
+
+.footer-section ul {
+    width: 15%;
+    padding: 25px;
+    color: #666666;
+    list-style-type: none;
+    line-height: 40px;
+}
+
+.footer-section ul .head-link {
+    color: #222222;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.copy-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #666666;
+    font-size: 15px;
+}
