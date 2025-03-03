@@ -512,6 +512,7 @@ footer .subscribe {
     border-radius: 10px;
     z-index: 1;
     top: -100px;
+    overflow: hidden;
 }
 
 footer .subscribe h1 {
@@ -524,6 +525,7 @@ footer .subscribe h1 {
 footer form {
     background-color: white;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 footer input[type = "email"] {
@@ -564,4 +566,22 @@ footer input[type = "email"] {
     justify-content: space-between;
     color: #666666;
     font-size: 15px;
+}
+
+.subscribe .subscribe-content {
+    position: relative;
+    z-index: 10;
+}
+
+footer .subscribe .bg-circles {
+    width: 25%;
+    position: absolute;
+    top: 230px;
+    left: 275px;
+}
+
+footer .subscribe .bg-trees {
+    position: absolute;
+    top: 100px;
+    right: 350px;
 }
